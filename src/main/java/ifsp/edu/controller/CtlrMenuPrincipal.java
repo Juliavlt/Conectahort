@@ -49,6 +49,12 @@ public class CtlrMenuPrincipal {
     }
 
     public void submenuFornecedores(ActionEvent actionEvent) {
+        WindowSubmenuClientes window = new WindowSubmenuClientes();
+        try {
+            window.showAndWait();
+        } catch (IOException e ){
+            e.printStackTrace();
+        }
     }
 
     public void submenuRenda(ActionEvent actionEvent) {
